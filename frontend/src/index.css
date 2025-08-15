@@ -1,0 +1,42 @@
+:root { --acm: #005B96; }
+
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, sans-serif;
+  background: #f4f8fb;
+}
+
+.card {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+label { display:block; margin: 10px 0 6px; font-weight: 600; color: #111827; }
+
+input[type="text"], input[type="email"], input[type="file"] {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  outline: none;
+  margin-bottom: 12px;
+  background: rgba(255,255,255,0.85);
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 0 4px rgba(0,191,255,0.15);
+}
+
+.btn-primary {
+  background: var(--acm);
+  color: #fff;
+  border: 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
